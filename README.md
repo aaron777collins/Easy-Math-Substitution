@@ -16,6 +16,6 @@ To exit the program, type _
 Thats it, enjoy!
 
 Note:
-Pressing ! may trigger your keyboard to switch to latvian or some other language (depending on your hot-key)
+Pressing ! may trigger your keyboard to switch to Latvian or some other language (depending on your hot-key)
 If this happens, press your windows key (⊞ Win) + Space to switch back. (Or un-bind the hot-key)
 Hope this solves any confusion!
