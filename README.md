@@ -2,7 +2,8 @@
 
  A simple script to make typing math equations easier.
 
- When you toggle the special character substitution mode on, it will replace the following characters as such:
+
+ When you toggle the special character substitution mode on (Press `), it will replace the following characters as such:
 
 	a - ∀
 	t - ∃
