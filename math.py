@@ -71,6 +71,48 @@ def on_release(key):
             pyautogui.press('backspace')
             type("¬")
 
+        if (key.char == 'u' and specialChar):
+            pyautogui.press('backspace')
+            type("∪")
+
+        if (key.char == 'i' and specialChar):
+            pyautogui.press('backspace')
+            type("∩")
+
+        if (key.char == 's' and specialChar):
+            pyautogui.press('backspace')
+            type("⊆")
+
+        if (key.char == 'd' and specialChar):
+            pyautogui.press('backspace')
+            type("⊂")
+
+        if (key.char == 'x' and specialChar):
+            pyautogui.press('backspace')
+            type("⊇")
+
+        if (key.char == 'c' and specialChar):
+            pyautogui.press('backspace')
+            type("⊃")
+
+        if (key.char == 'z' and specialChar):
+            pyautogui.press('backspace')
+            type("⊄")
+
+        if (key.char == 'q' and specialChar):
+            pyautogui.press('backspace')
+            type("⊅")
+
+        if (key.char == 'r' and specialChar):
+            pyautogui.press('backspace')
+            type("∉")
+
+        if (key.char == 'o' and specialChar):
+            pyautogui.press('backspace')
+            type("∅")
+
+
+
 
 
     except AttributeError:
