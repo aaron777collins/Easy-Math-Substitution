@@ -5,19 +5,20 @@
 
  When you toggle the special character substitution mode on (Press `), it will replace the following characters as such:
 
-	a - ∀
-	t - ∃
-	e - ∈
-	= - ≡
-	! - ¬
-	s - ⊆
-	d - ⊂
-	x - ⊇
-	c - ⊃
-	z - ⊄
-	q - ⊅
-	r - ∉
-	o - ∅
+	a  ->  ∀
+	t  ->  ∃
+	e  ->  ∈
+	=  ->  ≡
+	!  ->  ¬
+	s  ->  ⊆
+	d  ->  ⊂
+	x  ->  ⊇
+	c  ->  ⊃
+	z  ->  ⊄
+	q  ->  ⊅
+	r  ->  ∉
+	o  ->  ∅
+	-  ->  ⊖
 
 	
 
