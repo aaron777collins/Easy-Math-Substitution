@@ -10,6 +10,16 @@
 	e - ∈
 	= - ≡
 	! - ¬
+	s - ⊆
+	d - ⊂
+	x - ⊇
+	c - ⊃
+	z - ⊄
+	q - ⊅
+	r - ∉
+	o - ∅
+
+	
 
 To exit the program, type _
 
