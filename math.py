@@ -112,6 +112,11 @@ def on_release(key):
         if (key.char == 'y' and specialChar):
             pyautogui.press('backspace')
             type("⊢")
+
+        if (key.char == 'y' and specialChar):
+            pyautogui.press('backspace')
+            type("≠")
+
         if (key.char == 'h' and specialChar):
             pyautogui.press('backspace')
             file = open("README.md", "r", encoding="utf-8")
