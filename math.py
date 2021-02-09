@@ -104,6 +104,14 @@ def on_release(key):
             pyautogui.press('backspace')
             type("⊖")
 
+        if (key.char == 'p' and specialChar):
+            pyautogui.press('backspace')
+            type("∎")
+
+        if (key.char == 'y' and specialChar):
+            pyautogui.press('backspace')
+            type("⊢")
+
 
 
 
