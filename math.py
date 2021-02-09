@@ -4,12 +4,12 @@ import pyautogui
 import time
 import pyperclip
 import platform
+import tkinter as tk
 from pynput import keyboard
 
 
 running = True
 specialChar = False
-
 
 def type(text: str):
     pyperclip.copy(text)
@@ -39,6 +39,7 @@ def on_release(key):
 
         if (key.char == '`'):
             specialChar = not specialChar
+            pyautogui.press('backspace')
 
         if (key.char == 'a' and specialChar):
             pyautogui.press('backspace')
@@ -111,7 +112,19 @@ def on_release(key):
         if (key.char == 'y' and specialChar):
             pyautogui.press('backspace')
             type("⊢")
-
+        if (key.char == 'h' and specialChar):
+            pyautogui.press('backspace')
+            file = open("README.md", "r", encoding="utf-8")
+            root = tk.Tk()
+            root.title("Help - README.md")
+            S = tk.Scrollbar(root)
+            T = tk.Text(root, height=30, width=100)
+            S.pack(side=tk.RIGHT, fill=tk.Y)
+            T.pack(side=tk.LEFT, fill=tk.Y)
+            S.config(command=T.yview)
+            T.config(yscrollcommand=S.set)
+            T.insert(tk.END, file.read())
+            tk.mainloop()
 
 
 

@@ -10,3 +10,4 @@ def install(package):
 install("pyautogui")
 install("pyperclip")
 install("pynput")
+install("tk")

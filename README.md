@@ -21,6 +21,7 @@
 	-  ->  ⊖
 	p  ->  ∎
 	y  ->  ⊢
+	h  ->  HELP SCREEN (this file)
 
 	
 
