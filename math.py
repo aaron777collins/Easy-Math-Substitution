@@ -113,7 +113,7 @@ def on_release(key):
             pyautogui.press('backspace')
             type("⊢")
 
-        if (key.char == 'y' and specialChar):
+        if (key.char == ']' and specialChar):
             pyautogui.press('backspace')
             type("≠")
 
