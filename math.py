@@ -7,16 +7,22 @@ import platform
 import tkinter as tk
 from pynput import keyboard
 
-
 running = True
 specialChar = False
 
-def type(text: str):
+pyautogui.PAUSE = 0
+
+
+def pasteStr(text: str):
+    buffer = pyperclip.paste()
+
     pyperclip.copy(text)
     if platform.system() == "Darwin":
         pyautogui.hotkey("command", "v")
     else:
         pyautogui.hotkey("ctrl", "v")
+
+    pyperclip.copy(buffer)
 
 
 def on_press(key):
@@ -43,79 +49,79 @@ def on_release(key):
 
         if (key.char == 'a' and specialChar):
             pyautogui.press('backspace')
-            type("∀")
+            pasteStr("∀")
 
         if (key.char == 't' and specialChar):
             pyautogui.press('backspace')
-            type("∃")
+            pasteStr("∃")
 
         if (key.char == 'e' and specialChar):
             pyautogui.press('backspace')
-            type("∈")
+            pasteStr("∈")
 
         if (key.char == '=' and specialChar):
             pyautogui.press('backspace')
-            type("≡")
+            pasteStr("≡")
 
         if (key.char == '!' and specialChar):
             pyautogui.press('backspace')
-            type("¬")
+            pasteStr("¬")
 
         if (key.char == 'u' and specialChar):
             pyautogui.press('backspace')
-            type("∪")
+            pasteStr("∪")
 
         if (key.char == 'i' and specialChar):
             pyautogui.press('backspace')
-            type("∩")
+            pasteStr("∩")
 
         if (key.char == 's' and specialChar):
             pyautogui.press('backspace')
-            type("⊆")
+            pasteStr("⊆")
 
         if (key.char == 'd' and specialChar):
             pyautogui.press('backspace')
-            type("⊂")
+            pasteStr("⊂")
 
         if (key.char == 'x' and specialChar):
             pyautogui.press('backspace')
-            type("⊇")
+            pasteStr("⊇")
 
         if (key.char == 'c' and specialChar):
             pyautogui.press('backspace')
-            type("⊃")
+            pasteStr("⊃")
 
         if (key.char == 'z' and specialChar):
             pyautogui.press('backspace')
-            type("⊄")
+            pasteStr("⊄")
 
         if (key.char == 'q' and specialChar):
             pyautogui.press('backspace')
-            type("⊅")
+            pasteStr("⊅")
 
         if (key.char == 'r' and specialChar):
             pyautogui.press('backspace')
-            type("∉")
+            pasteStr("∉")
 
         if (key.char == 'o' and specialChar):
             pyautogui.press('backspace')
-            type("∅")
+            pasteStr("∅")
 
         if (key.char == '-' and specialChar):
             pyautogui.press('backspace')
-            type("⊖")
+            pasteStr("⊖")
 
         if (key.char == 'p' and specialChar):
             pyautogui.press('backspace')
-            type("∎")
+            pasteStr("∎")
 
         if (key.char == 'y' and specialChar):
             pyautogui.press('backspace')
-            type("⊢")
+            pasteStr("⊢")
 
         if (key.char == ']' and specialChar):
             pyautogui.press('backspace')
-            type("≠")
+            pasteStr("≠")
 
         if (key.char == 'h' and specialChar):
             pyautogui.press('backspace')
