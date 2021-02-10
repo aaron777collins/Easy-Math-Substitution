@@ -34,3 +34,5 @@ Note:
 Pressing ! may trigger your keyboard to switch to Latvian or some other language (depending on your hot-key)
 If this happens, press your windows key (⊞ Win) + Space to switch back. (Or un-bind the hot-key)
 Hope this solves any confusion!
+
+Also, there is a known bug where if you switch between characters in special character mode too quickly, you may end up pasting your clipboard.
