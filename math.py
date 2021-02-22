@@ -14,15 +14,12 @@ pyautogui.PAUSE = 0
 
 
 def pasteStr(text: str):
-    buffer = pyperclip.paste()
 
     pyperclip.copy(text)
     if platform.system() == "Darwin":
         pyautogui.hotkey("command", "v")
     else:
         pyautogui.hotkey("ctrl", "v")
-
-    pyperclip.copy(buffer)
 
 
 def on_press(key):
@@ -152,7 +149,7 @@ listener.start()
 
 def maincode():
     global running
-    print("\n\nPress ` - toggle character replacement\nPress _ to exit")
+    print("\n\nPress ` to toggle character replacement\nPress h when character replacement is enabled for help\nPress _ to exit")
     while (running):
         time.sleep(1)
 
